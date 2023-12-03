@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Web Routesx
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/todo/create', function () {
+    return view('todo.create');
+})->name('todo.create');
